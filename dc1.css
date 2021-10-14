@@ -1,0 +1,35 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.outer-div {
+	height: 100vh;
+	display: grid;
+	justify-content: column;
+	grid-template-columns:1fr 2fr 1fr ;
+}
+
+.inner-div {
+	display: flex;
+	justify-content: stretch;
+	align-items: center;
+}
+
+.inner-div.col-1 {
+flex-direction: column;
+}
+
+.inner-div.col-2 {
+	flex-direction: row;
+	justify-content: center;
+	align-self: center;
+
+}
+.box {
+	background-color: yellow;
+	margin: 1px solid black;
+	width: 100px;
+	height: 100px;
+	margin: 20px;
+}
